@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".page2"
+    android:background="@drawable/gradient_list"
+    android:id="@+id/mainlayout2">
+
+    <!--this is select_list item-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/bbt"
+        app:layout_constraintTop_toBottomOf="@+id/linear21"
+        android:hint="@string/select"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <AutoCompleteTextView
+            android:id="@+id/autoComplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none">
+
+        </AutoCompleteTextView>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linear21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:orientation="horizontal">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/mytoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:background="@drawable/gradient_list">
+
+            </androidx.appcompat.widget.Toolbar>
+
+     </com.google.android.material.appbar.AppBarLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#30ff"
+        android:text="goback"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relative21"
+        android:layout_width="match_parent"
+        android:layout_height="788dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintBottom_toBottomOf="@+id/out"
+        app:layout_constraintEnd_toEndOf="@+id/linear21"
+        app:layout_constraintTop_toBottomOf="@+id/linear21"
+        app:layout_constraintVertical_bias="0.144">
+
+        <TextView
+            android:id="@+id/r1_t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/r1_t2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r1_t1"
+
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/r1_t3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r1_t2"
+
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/r1_t4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r1_t3"
+
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/r1_t5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r1_t4"
+
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/r1_t6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r1_t5"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/r1_t7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r1_t6"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/r1_t8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r1_t7"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/r1_t9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r1_t8"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#599A36"
+        android:text="get"
+        android:textSize="25dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/relative21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear21"
+        app:layout_constraintVertical_bias="0.605" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
